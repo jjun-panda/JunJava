@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Money {
-	public static void main(String [] args) {
+public class ch2_1 {
+	public static void main(String[] args) {
     	Scanner money = new Scanner(System.in);
         
         float dollar;

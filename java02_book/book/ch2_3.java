@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Money2 {
+public class ch2_3 {
     public static void main(String[]args) {
         int num; //지폐의 장수 또는 동전의 개수
 

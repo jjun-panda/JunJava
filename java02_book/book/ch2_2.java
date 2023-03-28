@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Number {
+public class ch2_2 {
 	public static void main(String [] args) {
     	Scanner number = new Scanner(System.in);        
         System.out.print("2자리수 정수 입력(10~99)>> ");
