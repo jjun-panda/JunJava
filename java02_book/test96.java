@@ -6,7 +6,6 @@ public class test96 {
 
         int score = 0;
         String grade = "F";
-        String credit = "";
 
         System.out.print("점수를 입력하세요(0~100): ");
         score = scan.nextInt();
@@ -24,6 +23,8 @@ public class test96 {
         }
 
         int point = score % 10;
+        String credit = "";
+
         if (score >= 60 && score < 100){
             if (point >= 7) {
                 credit = "+";
@@ -33,6 +34,7 @@ public class test96 {
         } else if (score == 100) {
             credit = "+";
         }
+
         System.out.println("당신의 성적은 " + score + "점이며, " + grade + credit + "입니다.");
         scan.close();
     }
