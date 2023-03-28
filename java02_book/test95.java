@@ -12,33 +12,26 @@ public class test95 {
         b = scan.nextInt();
         c = scan.nextInt();
 
-        // 비교
         if ((a > b) && (a > c)) {
             max = a;
             if ((b>c)){
-                mid = b;
-                min = c;
+                mid = b; min = c;
             } else {
-                mid = c;
-                min = b;
+                mid = c; min = b;
             }
-        } else if ((b > a) && (b > c)) {
+        } else if ((b > c)) {
             max = b;
-            if ((a>c)){
-                mid = a;
-                min = c;
+            if ((a > c)){
+                mid = a; min = c;
             } else {
-                mid = c;
-                min = a;
+                mid = c; min = a;
             }
-        } else if ((c > a) && (c > b)) {
+        } else {
             max = c;
             if ((a>b)){
-                mid = a;
-                min = b;
+                mid = a; min = b;
             } else {
-                mid = b;
-                min = a;
+                mid = b; min = a;
             }
         }
         System.out.printf("max=%d, mid=%d, min=%d\n", max, mid, min);

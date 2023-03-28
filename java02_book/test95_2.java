@@ -18,11 +18,19 @@ public class test95_2 {
         min = (a < b)? a : b;
         min = (min < c)? min : c;
 
-        if (a == max) {
-            mid = (b > c)? b : c;
-        } else if (b == max) {
-            mid = (a > c)? a : c;
-        } else if (c == max) {
+        // if (a == max) {
+        //     mid = (b > c)? b : c;
+        // } else if (b == max) {
+        //     mid = (a > c)? a : c;
+        // } else if (c == max) {
+        //     mid = (a > b)? a : b;
+        // }
+
+        if (a == min) {
+            mid = (b < c)? b : c;
+        } else if (b == min) {
+            mid = (a < c)? a : c;
+        } else if (c == min) {
             mid = (a < b)? a : b;
         }
 
