@@ -1,3 +1,4 @@
+package java03_book;
 public class test05 {
 	public static void main (String[] args) {
         int c = 1;

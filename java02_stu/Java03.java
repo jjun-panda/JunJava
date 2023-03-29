@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class test97 {
+public class Java03 {
     static Scanner abc = new Scanner(System.in);
 
     public static void main(String[] args) {

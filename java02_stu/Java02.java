@@ -1,7 +1,8 @@
 
+
 import java.util.Scanner;
 
-public class test98 {
+public class Java02 {
 	
     public static Scanner scan;
 

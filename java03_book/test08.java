@@ -1,3 +1,4 @@
+package java03_book;
 import java.util.Scanner;
 
 public class test08 {

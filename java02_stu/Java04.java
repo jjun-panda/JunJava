@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class test96 {
+public class Java04 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -23,19 +24,18 @@ public class test96 {
         }
 
         int point = score % 10;
-        String credit = "";
 
         if (score >= 60 && score < 100){
             if (point >= 7) {
-                credit = "+";
+                grade += "+";
             } else if (point <= 3) {
-                credit = "-";
+                grade += "-";
             }
         } else if (score == 100) {
-            credit = "+";
+            grade += "+";
         }
 
-        System.out.println("당신의 성적은 " + score + "점이며, " + grade + credit + "입니다.");
+        System.out.println("당신의 성적은 " + score + "점이며, " + grade + "입니다.");
         scan.close();
     }
 }

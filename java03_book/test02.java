@@ -1,3 +1,4 @@
+package java03_book;
 public class test02 {
 	public static void main(String[] args) {
 		int sum=0;
