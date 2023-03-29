@@ -1,6 +1,6 @@
 package java03_stu;
 
-public class Java07 {
+public class Java07_1 {
     // 피보나치 수열
 	public static void main(String[] args) {
         final int MAX = 8;

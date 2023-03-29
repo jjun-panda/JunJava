@@ -1,6 +1,6 @@
 package java03_stu;
 
-public class Java07Copy {
+public class Java07_2 {
 	public static void main(String[] args) {
         final int MAX = 8;
 
