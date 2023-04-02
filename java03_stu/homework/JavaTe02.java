@@ -1,17 +1,20 @@
-package java03_stu;
+package java03_stu.homework;
 import java.util.Scanner;
 
 public class JavaTe02 {
 	public static void main(String[] args) {
 		Scanner math = new Scanner(System.in);
-		int number;
 		int n1 = 1;
 		int n2 = 0;
 		int n3 = 1;
 		int numA = 0;
 		int numB = 2; // 1부터 시작하므로 계산에서는 처음으로부터 3번째
 		
-		// n까지 합친 값을 확인하기 위한 입력용
+		// 1안.임의 숫자 적용 
+		// final int number = 8;
+		
+		// 2안.n까지 합친 값을 확인하기 위한 입력용
+		int number;
 		System.out.print("입력 해주세요: ");
 		number = math.nextInt();
 		

@@ -1,3 +1,4 @@
+package java03_stu.homework;
 import java.util.Scanner;
 
 public class JavaTe01 {
