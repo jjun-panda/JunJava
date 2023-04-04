@@ -16,7 +16,7 @@ public class JavaTe06 {
 
 			System.out.println("수를 결정하였습니다. 맞추어 보세요");
 
-			while(true) { // cut(카운드)는 재시도시 횟수마다 1씩 증가 적용
+			while(true) { // cut(카운트)는 재시도시 횟수마다 1씩 증가 적용
 				System.out.printf("%d-%d\n" + cut + ">>", min, max); // 힌트, 입력할 범위
 				int num = scan.nextInt(); // 사용자가 입력
 
@@ -30,7 +30,7 @@ public class JavaTe06 {
 					System.out.println("맞았습니다.");
 					break;
 				}
-				cut++; // 사용자가 입력 후 정답이 아니라면 카운드 1씩 증가
+				cut++; // 사용자가 입력 후 정답이 아니라면 카운트 1씩 증가
 			}
 			System.out.print("다시하시겠습니까(y/n)>>");
 			String choose;

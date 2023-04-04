@@ -8,7 +8,8 @@ public class ch3_4 {
 		
 		System.out.print("소문자 알파벳 하나를 입력하시오>> ");
 		String n = scan.next();
-		char c = n.charAt(0);
+		// (0)은 문자열 첫번째 문자
+		char c = n.charAt(0);	// 문자열에서 인자로 주어진 값에 해당하는 문자를 리턴
 
 		if(c < 'a' || c > 'z'){
 			System.out.println("잘못된 입력입니다. 다시 입력하시오");
