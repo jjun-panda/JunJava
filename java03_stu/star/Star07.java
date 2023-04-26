@@ -30,10 +30,11 @@ public class Star07 {
 	public static void main(String[] args) {
 		int end = 4;
 		for(int i=0; i<9; i++) {
+			System.out.print( end + " ");
 			for(int j=0; j<5; j++) {
-				System.out.printf(j<end ? " " : "*");
+				System.out.print(j<end ? " " : j);
 			}
-			System.out.println();
+			System.out.println(" " + i);
 			end = i<4 ? end-1 : end+1;
 		}
 	}

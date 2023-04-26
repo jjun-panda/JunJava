@@ -2,7 +2,7 @@ package java03_stu.homework;
 
 import java.util.Scanner;
 
-public class JavaGogodan02 {
+public class JavaGugudan02 {
 	Scanner scan = new Scanner(System. in);
 
 	int min, max;
@@ -14,7 +14,7 @@ public class JavaGogodan02 {
 		max = scan.nextInt();
     }
 
-	public JavaGogodan02() {
+	public JavaGugudan02() {
 		nextInput();
 
 		// if(min > max){
@@ -67,6 +67,6 @@ public class JavaGogodan02 {
 	}
 
 	public static void main(String[] args) {
-		new JavaGogodan02();
+		new JavaGugudan02();
 	}
 }

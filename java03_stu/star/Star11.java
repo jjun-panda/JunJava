@@ -16,15 +16,6 @@ package java03_stu.star;
 
 public class Star11 {
 	public static void main(String[] args) {
-		//0	*********	5 ~ <4
-		//1	****^****   4 ~ <5
-		//2	***^^^***	3 ~ <6
-		//3	**^^^^^**	2 ~ <7
-		//4	*^^^^^^^*	1 ~ <8
-		//5	**^^^^^**	2 ~ <7  9 - (i-3)
-		//6	***^^^***	3 ~ <6	9 -	(3)
-		//7	****^****	4 ~ <5	9 -	(4)
-		//8	*********	5 ~ <4
 		for(int i=0; i<9; i++) {
 			int s=0, e=0;
 			if(i<4) {
@@ -39,7 +30,7 @@ public class Star11 {
 					System.out.print("*");
 				}
 			}
-			// System.out.println();
+			System.out.println();
 		}
 	}
 }

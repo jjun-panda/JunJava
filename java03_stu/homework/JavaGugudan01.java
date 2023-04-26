@@ -1,8 +1,8 @@
 package java03_stu.homework;
 
-public class JavaGogodan01 {
+public class JavaGugudan01 {
 
-	public JavaGogodan01() {
+	public JavaGugudan01() {
 		int dan = 2; // 2단 부터 시작 
 		while(dan <= 9){
 			dan(dan); // n단을 출력
@@ -30,6 +30,6 @@ public class JavaGogodan01 {
 	}
 
 	public static void main(String[] args) {
-		new JavaGogodan01();
+		new JavaGugudan01();
 	}
 }
