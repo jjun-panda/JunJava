@@ -1,5 +1,3 @@
-package java02;
-
 public class Hello {
 	// Hello 홍길동 5
 	// Application의 진입점

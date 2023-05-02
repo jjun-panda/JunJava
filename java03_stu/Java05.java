@@ -18,8 +18,4 @@ public class Java05 {
         }
         System.out.println("1~100까지 3의 배수 누적 합은" + total);
 	}
-
-    
-
-
 }

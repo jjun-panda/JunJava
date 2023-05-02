@@ -32,7 +32,6 @@ public class Java17 {
 		System.out.print("월/일 입력: ");
 		month = scan.nextInt();
 		day = scan.nextInt();
-		int nextMon, nextDay;
 		// 입력월일로부터 100일 후의 날짜는 00월 00일
 		// 12월25일의 100일 후는 4월5일입니다.
 	}

@@ -31,8 +31,8 @@ public class Calendar02 {
 				total += days[i]; // 입력한 월에 따라 각각 일수를 더한다.
 			}
 		}
-		nextMon = 
-		nextDay = 
+		int nextMon = 0;
+		int nextDay = 0;
 
 		System.out.printf("\"%d월%d일 기준\"%d일 후는 %d월 %d일 입니다.", month, day, hundredDay, nextMon, nextDay);
 	}
