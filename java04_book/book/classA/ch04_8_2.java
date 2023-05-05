@@ -10,7 +10,7 @@ class Power {
     }
 }
 
-public class Example2_2 {
+public class ch04_8_2 {
     public static void main(String[] args) {
         Power robot = new Power();
         robot.set(10, 20);

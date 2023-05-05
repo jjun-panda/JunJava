@@ -1,14 +1,8 @@
-// 1   2   3   4   5
-//     4   5   6
-//         7
-//     8   9   10
-// 11  12  13  14  15
-
 package java04_stu.homework;
 
 import java.util.Random;
 
-public class java_04 {
+public class java_05 {
 	public static void main(String[] args) {      
 		int lotto[] = new int[6];
 		Random random = new Random();

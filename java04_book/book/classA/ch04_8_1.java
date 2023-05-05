@@ -11,7 +11,7 @@ class Power {
     }
 }
 
-public class Example2_1 {
+public class ch04_8_1 {
     public static void main(String[] args) {
         Power robot = new Power(10, 20);
     }
