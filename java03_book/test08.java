@@ -9,7 +9,7 @@ public class test08 {
         while(true) {
             System.out.print(">>");
             String test = scanner.nextLine();
-            if(test.equals("exit", "EXIT")) {
+            if(test.equals("exit")) {
                 break;
             }
         }

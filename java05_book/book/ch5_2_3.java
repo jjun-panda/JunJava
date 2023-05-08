@@ -1,3 +1,5 @@
+package java05_book.book;
+
 import java.util.Scanner;
 
 abstract class Converter {

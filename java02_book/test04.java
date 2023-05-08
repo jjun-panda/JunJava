@@ -6,10 +6,10 @@ public class test04 {
         // System.out.println(d);
         // System.out.println(e);
 
-        float f = 0.56789;
+        // float f = 0.56789;
         double w = 56789d;
 
-        System.out.println(f);
+        // System.out.println(f);
         System.out.println(w);
     }
 }
