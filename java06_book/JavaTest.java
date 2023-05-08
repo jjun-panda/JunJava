@@ -18,8 +18,7 @@ class Player{
         else return false;
     }
 }
- 
- 
+
 public class JavaTest {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
@@ -56,5 +55,4 @@ public class JavaTest {
             }
         }
     }
- 
 }

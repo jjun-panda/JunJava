@@ -1,4 +1,4 @@
-package java04_book.book.classA;
+package java04_book.book.quiz;
 
 class TV {
     private int size;
@@ -22,7 +22,7 @@ class TV {
     }
 }
 
-public class TV0 {
+public class TV_0 {
     public static void main(String[] args) {
         TV tv = new TV();
     }

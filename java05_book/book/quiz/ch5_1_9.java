@@ -1,4 +1,4 @@
-package java05_book.book.classA;
+package java05_book.book.quiz;
 
 // 1번
 abstract class A {

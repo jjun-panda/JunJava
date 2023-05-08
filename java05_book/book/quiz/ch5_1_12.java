@@ -1,4 +1,4 @@
-package java05_book.book.classA;
+package java05_book.book.quiz;
 
 class Shape {
     public void draw() {

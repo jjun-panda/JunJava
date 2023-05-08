@@ -1,4 +1,4 @@
-package java04_book.book.classA;
+package java04_book.book.quiz;
 
 // class Person {
 //     private int age;
