@@ -1,4 +1,4 @@
 {
-  "java.project.referencedLibraries": ["lib/**/*.jar", "/Users/jjun/Downloads/my_io_utils.jar"],
+  "java.project.referencedLibraries": ["lib/**/*.jar", "/Users/jjun/Downloads/my_io_utils.jar", "/Users/jjun/Dev/mariadb-java-client-3.1.4.jar"],
   "java.debug.settings.onBuildFailureProceed": true
 }

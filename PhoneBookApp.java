@@ -66,6 +66,7 @@ public class PhoneBookApp {
 	static Scanner sc = new Scanner(System.in);
 	
 	public PhoneBookApp() {
+		super();
 		saramList = new ArrayList<Saram>();
 	}
 
@@ -101,85 +102,85 @@ public class PhoneBookApp {
 
 	// 1.추가
 	public void addSaram() {
-		// System.out.print("이름을 입력해주세요>> ");
-		// String name = sc.nextLine();
-		// System.out.print("휴대폰을 입력해주세요('-'포함)>> ");
-		// String phone = sc.nextLine();
-		// System.out.print("이메일을 입력해주세요('@'포함)>> ");
-		// String email = sc.nextLine();
-		// System.out.print("지역을 입력해주세요>> ");
-		// String region = sc.nextLine();
-		// int no = saramList.size() + 1;
-		// Saram saram = new Saram(no, name, phone, email, region);
-		// saramList.add(saram);
-		// System.out.println(name + "님이 주소록에 추가되었습니다.");
+		System.out.print("이름을 입력해주세요>> ");
+		String name = sc.nextLine();
+		System.out.print("휴대폰을 입력해주세요('-'포함)>> ");
+		String phone = sc.nextLine();
+		System.out.print("이메일을 입력해주세요('@'포함)>> ");
+		String email = sc.nextLine();
+		System.out.print("지역을 입력해주세요>> ");
+		String region = sc.nextLine();
+		int no = saramList.size() + 1;
+		Saram saram = new Saram(no, name, phone, email, region);
+		saramList.add(saram);
+		System.out.println(name + "님이 주소록에 추가되었습니다.");
 	}
 	
 	// 2.뷰어
 	public void viewAllSarams() {
-		// System.out.println("-".repeat(20) + " 주소록 관리 " + "-".repeat(20));
-		// for (Saram s : saramList) {
-		//     System.out.println(s);
-		// }
+		System.out.println("-".repeat(20) + " 주소록 관리 " + "-".repeat(20));
+		for (Saram s : saramList) {
+			System.out.println(s);
+		}
 	}
 
 	// 3.검색
 	public void searchSaram() {
-		// System.out.print("검색할 이름>> ");
-		// String searchName = sc.nextLine();
-		// boolean found = false;
-		// for (Saram s : saramList) {
-		//     if (s.getName().equals(searchName)) {
-		//         System.out.println(s);
-		//         found = true;
-		//     }
-		// }
-		// if (!found) {
-		//     System.out.println(searchName + "님은 주소록에 없습니다.");
-		// }
+		System.out.print("검색할 이름>> ");
+		String searchName = sc.nextLine();
+		boolean found = false;
+		for (Saram s : saramList) {
+			if (s.getName().equals(searchName)) {
+				System.out.println(s);
+				found = true;
+			}
+		}
+		if (!found) {
+			System.out.println(searchName + "님은 주소록에 없습니다.");
+		}
 	}
 
 	// 4. 수정
 	public void modifySaram() {
-		// int modifyNo = sc.nextInt();
-		// for (Saram s : saramList) {
-		// 	if (s.getNo() == modifyNo) {
-		// 		System.out.println("수정하실 내용을 선택하세요 ");
-		// 		System.out.println("[ 1. 이름 2. 전화번호 3. 이메일 4. 지역 ]");
-		// 		int modifyOption = sc.nextInt();
-		// 		switch (modifyOption) {
-		// 			case 1:
-		// 				System.out.print("새로운 이름을 입력하세요.");
-		// 				String modifyName = sc.next();
-		// 				s.setName(modifyName);
-		// 				System.out.println("이름이 변경되었습니다.");
-		// 				break;
-		// 			case 2:
-		// 				System.out.print("새로운 전화번호를 입력하세요.");
-		// 				String modifyPhone = sc.next();
-		// 				s.setPhone(modifyPhone);
-		// 				System.out.println("전화번호가 변경되었습니다.");
-		// 				break;
-		// 			case 3:
-		// 				System.out.print("새로운 이메일을 입력하세요.");
-		// 				String modifyEmail = sc.next();
-		// 				s.setEmail(modifyEmail);
-		// 				System.out.println("이메일이 변경되었습니다.");
-		// 				break;
-		// 			case 4:
-		// 				System.out.print("새로운 지역을 입력하세요.");
-		// 				String modifyRegion = sc.next();
-		// 				s.setRegion(modifyRegion);
-		// 				System.out.println("지역이 변경되었습니다.");
-		// 				break;
-		// 			default:
-		// 				System.out.println("해당 번호가 없습니다.");
-		// 				break;
-		// 		}
-		// 		break;
-		// 	}
-		// }
-		// System.out.println("수정이 완료되었습니다.");
+		int modifyNo = sc.nextInt();
+		for (Saram s : saramList) {
+			if (s.getNo() == modifyNo) {
+				System.out.println("수정하실 내용을 선택하세요 ");
+				System.out.println("[ 1. 이름 2. 전화번호 3. 이메일 4. 지역 ]");
+				int modifyOption = sc.nextInt();
+				switch (modifyOption) {
+					case 1:
+						System.out.print("새로운 이름을 입력하세요.");
+						String modifyName = sc.next();
+						s.setName(modifyName);
+						System.out.println("이름이 변경되었습니다.");
+						break;
+					case 2:
+						System.out.print("새로운 전화번호를 입력하세요.");
+						String modifyPhone = sc.next();
+						s.setPhone(modifyPhone);
+						System.out.println("전화번호가 변경되었습니다.");
+						break;
+					case 3:
+						System.out.print("새로운 이메일을 입력하세요.");
+						String modifyEmail = sc.next();
+						s.setEmail(modifyEmail);
+						System.out.println("이메일이 변경되었습니다.");
+						break;
+					case 4:
+						System.out.print("새로운 지역을 입력하세요.");
+						String modifyRegion = sc.next();
+						s.setRegion(modifyRegion);
+						System.out.println("지역이 변경되었습니다.");
+						break;
+					default:
+						System.out.println("해당 번호가 없습니다.");
+						break;
+				}
+				break;
+			}
+		}
+		System.out.println("수정이 완료되었습니다.");
 	}
 
 	// 5. 종료
@@ -227,79 +228,16 @@ public class PhoneBookApp {
 
 			switch (choice) {
 			case 1:
-				System.out.print("이름을 입력해주세요>> ");
-				String name = sc.nextLine();
-				System.out.print("휴대폰을 입력해주세요('-'포함)>> ");
-				String phone = sc.nextLine();
-				System.out.print("이메일을 입력해주세요('@'포함)>> ");
-				String email = sc.nextLine();
-				System.out.print("지역을 입력해주세요>> ");
-				String region = sc.nextLine();
-				int no = saramList.size() + 1;
-				Saram saram = new Saram(no, name, phone, email, region);
-				saramList.add(saram);
-				System.out.println(name + "님이 주소록에 추가되었습니다.");
+				addSaram();
 				break;
 			case 2:
-				System.out.println("-".repeat(20) + " 주소록 관리 " + "-".repeat(20));
-				for (Saram s : saramList) {
-					System.out.println(s);
-				}
+				viewAllSarams();
 				break;
 			case 3:
-				System.out.print("검색할 이름>> ");
-				String searchName = sc.nextLine();
-				boolean found = false;
-				for (Saram s : saramList) {
-					if (s.getName().equals(searchName)) {
-						System.out.println(s);
-						found = true;
-					}
-				}
-				if (!found) {
-					System.out.println(searchName + "님은 주소록에 없습니다.");
-				}
+				searchSaram();
 				break;
 			case 4:
-				int modifyNo = sc.nextInt();
-				for (Saram s : saramList) {
-					if (s.getNo() == modifyNo) {
-						System.out.println("수정하실 내용을 선택하세요 ");
-						System.out.println("[ 1. 이름 2. 전화번호 3. 이메일 4. 지역 ]");
-						int modifyOption = sc.nextInt();
-						switch (modifyOption) {
-							case 1:
-								System.out.print("새로운 이름을 입력하세요.");
-								String modifyName = sc.next();
-								s.setName(modifyName);
-								System.out.println("이름이 변경되었습니다.");
-								break;
-							case 2:
-								System.out.print("새로운 전화번호를 입력하세요.");
-								String modifyPhone = sc.next();
-								s.setPhone(modifyPhone);
-								System.out.println("전화번호가 변경되었습니다.");
-								break;
-							case 3:
-								System.out.print("새로운 이메일을 입력하세요.");
-								String modifyEmail = sc.next();
-								s.setEmail(modifyEmail);
-								System.out.println("이메일이 변경되었습니다.");
-								break;
-							case 4:
-								System.out.print("새로운 지역을 입력하세요.");
-								String modifyRegion = sc.next();
-								s.setRegion(modifyRegion);
-								System.out.println("지역이 변경되었습니다.");
-								break;
-							default:
-								System.out.println("해당 번호가 없습니다.");
-								break;
-						}
-						break;
-					}
-				}
-				System.out.println("수정이 완료되었습니다.");
+				modifySaram();
 				break;
 			case 5:
 				stop();	
@@ -311,5 +249,6 @@ public class PhoneBookApp {
 	public static void main(String[] args) {
 		PhoneBookApp book = new PhoneBookApp();
 		book.menu();
+		// System.out.println(saramList.size());
 	}
 }
