@@ -3,8 +3,6 @@ package java06_stu;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import Saram;
-
 class Saram implements Comparable<Saram> {
 	private int seq;
 	private String id;
