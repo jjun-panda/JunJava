@@ -3,13 +3,14 @@ package java10_stu;
 import java.io.*;
 import java.net.*;
 import java.nio.*;
+import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) {
         BufferedReader in = null;
         BufferedWriter out = null;
         Socket socket = null;
-        Scannner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         try {
             socket = new Socket("localhost", 9999);
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -17,7 +18,7 @@ public class Client {
             while(true) {
                 System.out.println("보내기>> ");
                 String outputMessage = scanner.nextLine();
-                if(outputMessage.equalslgnoreCase("bye")) {
+                if(outputMessage.equalsIgnoreCase("bye")) {
                     out.write(outputMessage + "\n");
                     out.flush();
                     break;
@@ -28,6 +29,15 @@ public class Client {
                 System.out.println("서버: " + inputMessage);
             }
 
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            try {
+            scanner.close();
+            if(socket != null) socket.close(); // 클라이언트 소켓 닫기
+            } catch (IOException e) {
+                System.out.println("서버와 채팅 중 오류가 발생했습니다.");
+            }
         }
     }
 }
