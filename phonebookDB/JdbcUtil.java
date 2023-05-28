@@ -10,7 +10,7 @@ public class JdbcUtil {
     public static Connection getConnection() {
         String url = "jdbc:mariadb://localhost:3306/jjun";
         String user = "jjun";
-        String password = "jjun";
+        String password = "1234";
         try {
             Class.forName("org.mariadb.jdbc.Driver");
             Connection conn = DriverManager.getConnection(url, user, password);
